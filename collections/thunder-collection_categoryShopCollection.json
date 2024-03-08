@@ -1,0 +1,73 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "categoryShopCollection",
+    "dateExported": "2024-03-10T00:01:44.909Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f707479c-d64e-4515-905a-f43ccbb46321",
+            "colId": "d911494d-be81-4529-a4eb-2029a92b9cff",
+            "containerId": "",
+            "name": "categoryPost",
+            "url": "http://localhost:3000/onlineShop/v1/categories",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-07T16:24:46.851Z",
+            "modified": "2024-03-09T23:47:14.352Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZGUzOTIzOGY5NDRhMjRjYzg2OTYiLCJpYXQiOjE3MTAwMjc5NTYsImV4cCI6MTcxMDAzMTU1Nn0.5g-XyfpxbQoIP6GNfH8YM7UPYPWpGXiJo09eNVMnmU0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"categoryName\": \"Limpieza\",\n  \"description\": \"productos que vienen en latas\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "b1d39d62-4d57-40f0-a8e8-fbb40d4217d3",
+            "colId": "d911494d-be81-4529-a4eb-2029a92b9cff",
+            "containerId": "",
+            "name": "categoriesGet",
+            "url": "http://localhost:3000/onlineShop/v1/categories",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-07T16:27:54.820Z",
+            "modified": "2024-03-07T16:28:06.431Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0aee7b01-67a3-4505-9d74-a6fd16171652",
+            "colId": "d911494d-be81-4529-a4eb-2029a92b9cff",
+            "containerId": "",
+            "name": "gategoryDelete",
+            "url": "http://localhost:3000/onlineShop/v1/categories",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-08T08:36:53.224Z",
+            "modified": "2024-03-09T23:53:51.977Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZGUzOTIzOGY5NDRhMjRjYzg2OTYiLCJpYXQiOjE3MTAwMjc0NjYsImV4cCI6MTcxMDAzMTA2Nn0.L1ceCFzF9J0zGRBen5g2lEdGT1WzEqXpNOa26lT4r2E"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"categoryName\": \"Limpieza\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}

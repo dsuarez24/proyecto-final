@@ -1,0 +1,49 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "authShopCollection",
+    "dateExported": "2024-03-10T00:01:39.286Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "49f74af8-e6a7-4138-8ac4-9a28352251e0",
+            "colId": "33462435-ff58-40a5-88b8-bdd34f5ce088",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/onlineShop/v1/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-07T15:36:45.126Z",
+            "modified": "2024-03-09T23:55:01.412Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"user0\",\n  \"phone\": \"12345643\",\n  \"address\": \"asdfsddas\",\n  \"email\":\"user0@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "895a5520-9754-4d99-9951-2d5cfe0cda76",
+            "colId": "33462435-ff58-40a5-88b8-bdd34f5ce088",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/onlineShop/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-07T15:40:07.363Z",
+            "modified": "2024-03-10T00:00:33.770Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"admindefault@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        }
+    ]
+}
