@@ -30,8 +30,7 @@ router.get(
     "/forUser",
     [
         validateJWT,
-        isAdmin,
-        check("email"),
+        isClient,
     ],billsForUser
 )
 

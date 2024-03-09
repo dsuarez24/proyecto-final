@@ -1,24 +1,24 @@
 {
     "client": "Thunder Client",
     "collectionName": "billsShopCollection",
-    "dateExported": "2024-03-10T00:02:14.542Z",
+    "dateExported": "2024-03-14T20:57:25.283Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "ef8a9539-e494-48a4-b0cc-1656efa32817",
-            "colId": "6c50b5d4-14c3-42b2-b4f7-70d931ce525b",
+            "_id": "2c29e31e-4bed-4b8f-8e5b-6ca63db79016",
+            "colId": "3ca9e11f-2625-442e-a929-545631817efa",
             "containerId": "",
             "name": "generateBill",
             "url": "http://localhost:3000/onlineShop/v1/bills",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-09T04:49:18.473Z",
-            "modified": "2024-03-09T23:59:35.536Z",
+            "created": "2024-03-14T19:28:28.247Z",
+            "modified": "2024-03-14T20:54:02.729Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjZjZkNTY5YzliMmU3MjkxNWE4MGYiLCJpYXQiOjE3MTAwMjg1MTMsImV4cCI6MTcxMDAzMjExM30.W4LoRaiwaonkoWKWGkkoJu92oEkWkY6oXpa9N06JeFw"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
                 }
             ],
             "params": [],
@@ -26,19 +26,19 @@
             "tests": []
         },
         {
-            "_id": "9bad13eb-c526-4009-af56-08a5fe90db2d",
-            "colId": "6c50b5d4-14c3-42b2-b4f7-70d931ce525b",
+            "_id": "9e0565b7-1894-44bf-86b5-51386c930b19",
+            "colId": "3ca9e11f-2625-442e-a929-545631817efa",
             "containerId": "",
             "name": "billsHistory",
             "url": "http://localhost:3000/onlineShop/v1/bills",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-09T09:03:53.228Z",
-            "modified": "2024-03-09T23:59:52.726Z",
+            "created": "2024-03-14T19:28:28.248Z",
+            "modified": "2024-03-14T20:55:03.924Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjZjZkNTY5YzliMmU3MjkxNWE4MGYiLCJpYXQiOjE3MTAwMjg1MTMsImV4cCI6MTcxMDAzMjExM30.W4LoRaiwaonkoWKWGkkoJu92oEkWkY6oXpa9N06JeFw"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAyZjQ2MTY0N2ExZjk3MjJjOWEiLCJpYXQiOjE3MTA0NDk2OTEsImV4cCI6MTcxMDQ5Mjg5MX0.jO1XuPOFzUdEG7eUD2DOjhez_hKrmRrW22CdFMFEId0"
                 }
             ],
             "params": [],
@@ -46,27 +46,22 @@
             "tests": []
         },
         {
-            "_id": "ca3d44c3-042a-479f-bd4b-489287ebdadc",
-            "colId": "6c50b5d4-14c3-42b2-b4f7-70d931ce525b",
+            "_id": "2e73d6f3-9ec4-4f4a-9cce-c6c394b27ffb",
+            "colId": "3ca9e11f-2625-442e-a929-545631817efa",
             "containerId": "",
             "name": "billsForUser",
             "url": "http://localhost:3000/onlineShop/v1/bills/forUser",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-03-09T18:26:36.617Z",
-            "modified": "2024-03-10T00:00:55.557Z",
+            "created": "2024-03-14T19:28:28.249Z",
+            "modified": "2024-03-14T20:53:49.604Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZGUzOTIzOGY5NDRhMjRjYzg2OTYiLCJpYXQiOjE3MTAwMjg4MzMsImV4cCI6MTcxMDAzMjQzM30.7Lqk3FRyqrq1qt2ngZZk7YrLPmrPKLytWTN-sFvAhyo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
                 }
             ],
             "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"email\": \"user0@gmail.com\"\n}",
-                "form": []
-            },
             "reqType": "get",
             "tests": []
         }

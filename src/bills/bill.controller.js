@@ -33,8 +33,7 @@ export const payPurchase = async (req =request, res = response) => {
     purchase.pending = false;
     await purchase.save();
 
-    res.status(200).json({ 
-        msg: 'purchase has been pay',
+    res.status(200).json({
         msg: 'BILL GENERATED',
         bill: {
             ...bill.toObject(),
@@ -46,14 +45,9 @@ export const payPurchase = async (req =request, res = response) => {
 };
 
 export const billsHistory = async (req = request, res = response) => {
-    const {id} = req.user;
-    const query = {user: id};
-
-    const user = await User.findById(id);
-
     const [total, bills] = await Promise.all([
-        Bill.countDocuments(query),
-        Bill.find(query).populate({path: 'purchase', select: '-_id -user'})
+        Bill.countDocuments(),
+        Bill.find().populate({path: 'purchase', select: '-_id'}).populate({path: 'user', select: 'email'})
     ]);
     
     res.status(200).json({
@@ -62,7 +56,6 @@ export const billsHistory = async (req = request, res = response) => {
             
 
             ...bill.toObject(),
-            user: user.email,
             purchase: bill.purchase,
             dateTime:  `${bill.dateTime.getFullYear()}-${('0' + (bill.dateTime.getMonth() + 1)).slice(-2)}-${('0' + bill.dateTime.getDate()).slice(-2)}   ${('0' + bill.dateTime.getHours()).slice(-2)}:${('0' + bill.dateTime.getMinutes()).slice(-2)}:${('0' + bill.dateTime.getSeconds()).slice(-2)}`
         }))
@@ -70,8 +63,8 @@ export const billsHistory = async (req = request, res = response) => {
 };
 
 export const billsForUser = async (req = request, res = response) => {
-    const {email} = req.body;
-    const user = await User.findOne({email});
+    const {id} = req.user;
+    const user = await User.findOne({_id: id});
 
     if(!user){
         return res.status(404).json({ msg: 'User doesnt exist in the databse' });

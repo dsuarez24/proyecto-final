@@ -1,33 +1,103 @@
 {
     "client": "Thunder Client",
     "collectionName": "purchaseShopCollection",
-    "dateExported": "2024-03-10T00:02:04.348Z",
+    "dateExported": "2024-03-14T20:53:23.654Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "94e00494-44d0-4106-9be7-7f4b12e1d61f",
-            "colId": "63777309-dc5e-483f-bdbe-f96a6e166188",
+            "_id": "b42edab1-941e-4c3f-a29e-e86405a527d6",
+            "colId": "e3550c24-b8e0-4a8b-9d10-b77313581795",
             "containerId": "",
             "name": "addToCart",
             "url": "http://localhost:3000/onlineShop/v1/shoppingCart",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-08T10:51:55.126Z",
-            "modified": "2024-03-09T23:58:58.411Z",
+            "created": "2024-03-14T19:28:28.346Z",
+            "modified": "2024-03-14T20:48:09.598Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjZjZkNTY5YzliMmU3MjkxNWE4MGYiLCJpYXQiOjE3MTAwMjg1MTMsImV4cCI6MTcxMDAzMjExM30.W4LoRaiwaonkoWKWGkkoJu92oEkWkY6oXpa9N06JeFw"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"productName\": \"Limpia vidrios\",\n  \"quantity\": 1\n}",
+                "raw": "{\n  \"productName\": \"Limpia vidrios\",\n  \"quantity\": 2\n}",
                 "form": []
             },
             "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "e5cdd838-fff3-477e-9355-d6483b88dc6e",
+            "colId": "e3550c24-b8e0-4a8b-9d10-b77313581795",
+            "containerId": "",
+            "name": "update item on cart",
+            "url": "http://localhost:3000/onlineShop/v1/shoppingCart",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-14T20:21:13.410Z",
+            "modified": "2024-03-14T20:31:56.939Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productName\": \"Limpia vidrios\",\n  \"quantity\": 2\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "2f148717-d21b-4149-bb0a-dcaafa61d7e7",
+            "colId": "e3550c24-b8e0-4a8b-9d10-b77313581795",
+            "containerId": "",
+            "name": "get cart",
+            "url": "http://localhost:3000/onlineShop/v1/shoppingCart",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-14T20:21:15.541Z",
+            "modified": "2024-03-14T20:32:50.216Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
+                }
+            ],
+            "params": [],
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "736f9c53-4fd8-4d94-b061-73c3e2927eca",
+            "colId": "e3550c24-b8e0-4a8b-9d10-b77313581795",
+            "containerId": "",
+            "name": "remove item from cart",
+            "url": "http://localhost:3000/onlineShop/v1/shoppingCart",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-14T20:47:03.708Z",
+            "modified": "2024-03-14T20:47:49.225Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYzNTAzNTQ2MTY0N2ExZjk3MjJjYTMiLCJpYXQiOjE3MTA0NDgyOTgsImV4cCI6MTcxMDQ5MTQ5OH0.YEE_4vLYBTfwq-RAbM-Wjmdp2Nvlt22odrpyfAWlai0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productName\": \"Limpia vidrios\"\n}",
+                "form": []
+            },
+            "reqType": "put",
             "tests": []
         }
     ]
